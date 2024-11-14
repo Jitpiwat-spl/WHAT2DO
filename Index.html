@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHAT2DO</title>
+    <link rel="icon" type="image/x-icon" href="icon/1234.png">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="Task.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="Topbar">
+            <div class="Top1">
+                <img src="icon/1234.png">
+                <h2>WHAT2DO</h2>
+            </div>
+            <a href="Index.html" class="Top2" id="Home">
+                <h1><img src="icon/home.png" style="height: 30px; width: 30px;"> Home</h1>
+            </a>
+            <a href="Note.html" class="Top3">
+                <h1><img src="icon/note.png" style="height: 30px; width: 30px;"> Note</h1>
+            </a>
+            <a href="Calen.html" class="Top4">
+                <h1><img src="icon/Calen.png" style="height: 30px; width: 30px;"> Calendar</h1>
+            </a>
+            <a href="Task.html" class="Top5">
+                <h1><img src="icon/Task.png" style="height: 30px; width: 30px;"> Task</h1>
+            </a>
+        </div>
+        <div class="pages">
+            <div class="TopicS">
+                <h1>Welcome to "WHAT2DO"</h1>
+            </div>
+            <div class="TopicS2">
+                <h3>"We’ll handle your to-dos"</h3>
+            </div>
+            <div class="toptaskl">
+                <h3>Task</h3>
+                <div class="task11">
+                    <p>Have you added your task for us to manage yet? If not, just add now!</p>
+                    <button class="add" onclick="window.location.href='Task.html';">Add Task!</button>
+                </div>
+            </div>
+            <div class="upcoming-tasks">
+                <h3>Upcoming Tasks</h3>
+                <div class="infooobar">
+                    <div class="inf-date"></div>
+                    <div class="inf-item"></div>
+                    <div class="inf-des"></div>
+                </div>
+            </div>
+        </div>
+        <script src="Index.js"></script>
+    </div>
+</body>
+</html>

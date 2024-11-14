@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHAT2DO - Notes</title>
+    <link rel="icon" type="image/x-icon" href="/icon/1234.png">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="Note.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="Topbar">
+            <div class="Top1">
+                <img src="icon/1234.png" alt="Logo">
+                <h2>WHAT2DO</h2>
+            </div>
+            <a href="Index.html" class="Top2" id="Home">
+                <h1><img src="icon/home.png" style="height: 30px; width: 30px;"> Home</h1>
+            </a>
+            <a href="Note.html" class="Top3">
+                <h1><img src="icon/note.png" style="height: 30px; width: 30px;"> Note</h1>
+            </a>
+            <a href="Calen.html" class="Top4">
+                <h1><img src="icon/Calen.png" style="height: 30px; width: 30px;"> Calendar</h1>
+            </a>
+            <a href="Task.html" class="Top5">
+                <h1><img src="icon/Task.png" style="height: 30px; width: 30px;"> Task</h1>
+            </a>
+        </div>
+        <div class="content">
+            <div class="note-header">
+                <h2>Notes</h2>
+            </div>
+            <button id="show-note-form-btn" class="btn">Add New Note</button>
+            <div class="note-form" id="note-form" style="display: none;">
+                <input type="text" id="note-title" placeholder="Enter note title" class="input-note">
+                <textarea id="note-details" placeholder="Enter note details" class="input-note"></textarea>
+                <button id="add-note-btn" class="btn">Save Note</button>
+            </div>
+            <div class="notes-display">
+                <hr>
+                <h3>Your Notes</h3>
+                <div id="notes-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-details"></p>
+        </div>
+    </div>
+
+    <script src="Note.js"></script>
+</body>
+</html>

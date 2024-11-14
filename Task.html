@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHAT2DO</title>
+    <link rel="icon" type="image/x-icon" href="/icon/1234.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="task.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="Topbar">
+            <div class="Top1">
+                <img src="icon/1234.png">
+                <h2>WHAT2DO</h2>
+            </div>
+            <a href="Index.html" class="Top2" id="Home">
+                <h1><img src="icon/home.png" style="height: 30px; width: 30px;"> Home</h1>
+            </a>
+            <a href="Note.html" class="Top3">
+                <h1><img src="icon/note.png" style="height: 30px; width: 30px;"> Note</h1>
+            </a>
+            <a href="Calen.html" class="Top4">
+                <h1><img src="icon/Calen.png" style="height: 30px; width: 30px;"> Calendar</h1>
+            </a>
+            <a href="Task.html" class="Top5">
+                <h1><img src="icon/Task.png" style="height: 30px; width: 30px;"> Task</h1>
+            </a>
+        </div>
+        <div class="Tcon">
+            <div class="TopT">
+                <h1>Tasks</h1>
+            </div>
+            <button class="new" id="opentask">Add Task</button>
+            <div class="task-modal" id="taskmodal">
+                <div class="taskcon">
+                    <span class="closet" id="closetask">X</span>
+                    <h1>To-Do List</h1>
+                    <form>
+                        <div class="tas0">
+                            <input type="text" class="inpp" id="taskName" name="taskName" placeholder="Write your Task" required>
+                        </div>
+                        <hr><br>
+                        <div class="tasconn">
+                            <label for="taskDescription">Description:</label>
+                            <textarea id="taskDescription" name="taskDescription" rows="5" required></textarea>
+                        </div><br>
+                        <label for="datetask">Due Date:</label>
+                        <input type="date" name="datetask" id="datetask" required>
+                        <br><br>
+                        <input type="submit" value="Add Task" id="submit" >
+                    </form>
+                </div>
+            </div>
+            <div class="mebar">
+                <div class="menubar">
+                    <div class="bar">
+                        <h3>My Task</h3>
+                    </div>
+                    <div class="bar1">
+                        <h3>Information</h3>
+                    </div>
+                    <div class="bar2">
+                        <h3>Due Date</h3>
+                    </div>
+                </div>
+            </div>
+                <div class="infobar">
+                    <div id="task-item" class="task-item"></div>
+                    <div id="task-des" class="task-des"></div>
+                    <div id="task-date" class="task-date"></div>
+                </div>
+            <div id="taskList" class="task-list"></div>
+        </div>
+    </div>
+    <script src="Task.js"></script>
+    <script src="Task1.js"></script>
+</body>
+</html>
